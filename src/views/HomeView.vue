@@ -22,32 +22,32 @@
       <v-layout wrap>
         <v-flex xs4 class="pa-2" data-aos="fade-right">
           <v-responsive :aspect-ratio="1/1">
-            <img src="/image/top1.jpg" class="image">
+            <img src="image/top1.jpg" class="image">
           </v-responsive>
         </v-flex>
         <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
           <v-responsive :aspect-ratio="1/1">
-            <img src="/image/top2.jpg" class="image">
+            <img src="image/top2.jpg" class="image">
           </v-responsive>
         </v-flex>
         <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
           <v-responsive :aspect-ratio="1/1">
-            <img src="/image/top3.jpg" class="image">
+            <img src="image/top3.jpg" class="image">
           </v-responsive>
         </v-flex>
         <v-flex xs4 class="pa-2" data-aos="fade-right">
           <v-responsive :aspect-ratio="1/1">
-            <img src="/image/top1.jpg" class="image">
+            <img src="image/top1.jpg" class="image">
           </v-responsive>
         </v-flex>
         <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="100">
           <v-responsive :aspect-ratio="1/1">
-            <img src="/image/top2.jpg" class="image">
+            <img src="image/top2.jpg" class="image">
           </v-responsive>
         </v-flex>
         <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
           <v-responsive :aspect-ratio="1/1">
-            <img src="/image/top3.jpg" class="image">
+            <img src="image/top3.jpg" class="image">
           </v-responsive>
         </v-flex>
 
