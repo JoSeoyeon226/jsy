@@ -1,17 +1,17 @@
 <template>
   <div>
     <swiper :options="swiperOption" class="swiper">
-      <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(/image/top1.jpg);">
+      <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(image/top1.jpg);">
         <v-layout data-aos="fade-up" data-aos-duration="1000" fill-height align-center justify-center>
           <div class="slog">명지전문대학 조서연</div>
         </v-layout></swiper-slide>
 
-      <swiper-slide class="slide" style="background-image:url(/image/top2.jpg);">
+      <swiper-slide class="slide" style="background-image:url(image/top2.jpg);">
         <v-layout fill-height align-center justify-center>
           <div class="slog">명지전문대학 조서연</div>
         </v-layout></swiper-slide>
 
-    <swiper-slide class="slide" style="background-image:url(/image/top3.jpg);">
+    <swiper-slide class="slide" style="background-image:url(image/top3.jpg);">
       <v-layout fill-height align-center justify-center>
           <div class="slog">명지전문대학 조서연</div>
         </v-layout></swiper-slide>
