@@ -8,6 +8,7 @@ import year_19 from '../views/year/2019.vue'
 import year_20 from '../views/year/2020.vue'
 import year_21 from '../views/year/2021.vue'
 import year_22 from '../views/year/2022.vue'
+import detail_22_2 from  '../views/detail/2022-2.vue'
 
 
 Vue.use(VueRouter)
@@ -58,6 +59,12 @@ const routes = [
   name: 'year_22',
   component: year_22
   },
+  {
+    path: '/portpolio/2022/2',
+    name: 'detail_22_2',
+    component: detail_22_2
+  },
+  
 
 ]
 

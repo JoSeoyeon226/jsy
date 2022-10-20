@@ -6,6 +6,8 @@
             <v-btn text @click="MoveAboutMe">About Me</v-btn>
             <v-btn text @click="MoveResume">Resume</v-btn>
             <v-btn text @click="MovePortpolio">PortPolio</v-btn>
+            <v-btn text :href="`https://github.com/JoSeoyeon226`">GitHub</v-btn>
+            <v-btn text :href="`https://www.notion.so/joseoyeon/Study-with-49182354781346c6b4827f0ecc092aa4`">Notion</v-btn>
             
         </v-layout>
     </div>

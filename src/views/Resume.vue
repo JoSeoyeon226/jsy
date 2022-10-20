@@ -2,10 +2,11 @@
   <div>
       <AppHeader />
       <v-layout wrap>
-      <v-flex data-aos="fade-right">
+      <v-flex data-aos="fade-down">
         <v-responsive>
-          <img src="image/resume.png" class="image">
-          
+          <div class="img_css">
+           <img src="image/resume.png" class="image">
+          </div>
         </v-responsive>
       </v-flex>
   </v-layout>
@@ -24,13 +25,13 @@ components: {
 </script>
 
 <style scoped>
-.div_img{
-  display: flex;
-  position: relative;
-}
-/* .slide{
-    background-size:cover;
-    background-position: center center;
-} */
+.image{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  /* .img_css{
+    height: 100%;
+  } */
 
 </style>
