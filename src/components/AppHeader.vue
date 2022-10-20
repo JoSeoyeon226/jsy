@@ -1,14 +1,35 @@
 <template>
     <div class="header">
         <v-layout align-center>
-            <div class="logo">조서연의 포트폴리오</div>
+            <div class="logo" @click="MoveMain">조서연의 포트폴리오</div>
             <v-spacer></v-spacer>
-            <v-btn text>프로젝트1</v-btn>
-            <v-btn text>프로젝트2</v-btn>
-            <v-btn text>프로젝트3</v-btn>
+            <v-btn text @click="MoveAboutMe">About Me</v-btn>
+            <v-btn text @click="MoveResume">Resume</v-btn>
+            <v-btn text @click="MovePortpolio">PortPolio</v-btn>
+            
         </v-layout>
     </div>
 </template>
+
+<script>
+export default{
+    methods: {
+        MoveMain() {
+			this.$router.push("/")
+        },
+        MoveAboutMe() {
+			this.$router.push("/aboutme")
+        },
+        MoveResume() {
+			this.$router.push("/resume")
+        },   
+	    MovePortpolio() {
+			this.$router.push("/portpolio")
+        }   
+    }
+}
+
+</script>
 
 <style scoped>
     .header{

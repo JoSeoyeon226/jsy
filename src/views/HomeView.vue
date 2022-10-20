@@ -1,59 +1,20 @@
 <template>
   <div>
     <swiper :options="swiperOption" class="swiper">
-      <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(image/top1.jpg);">
+      <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-color: #f9f4c2;">
         <v-layout data-aos="fade-up" data-aos-duration="1000" fill-height align-center justify-center>
-          <div class="slog">명지전문대학 조서연</div>
+          <div>
+            <div class="slog">Jo Seoyeon</div>
+            <div class="job">Product Manager</div>
+            <v-spacer>
+            <div class="btnl">
+              <v-btn class="btn" @click="MoveResume">Resume</v-btn>
+              <v-btn class="btn" @click="MovePortpolio">PortPolio</v-btn>
+            </div>
+          </v-spacer>
+          </div>
         </v-layout></swiper-slide>
-
-      <swiper-slide class="slide" style="background-image:url(image/top2.jpg);">
-        <v-layout fill-height align-center justify-center>
-          <div class="slog">명지전문대학 조서연</div>
-        </v-layout></swiper-slide>
-
-    <swiper-slide class="slide" style="background-image:url(image/top3.jpg);">
-      <v-layout fill-height align-center justify-center>
-          <div class="slog">명지전문대학 조서연</div>
-        </v-layout></swiper-slide>
-    </swiper>
-
-    <div class="section">
-      <div class="header">프로젝트 목록</div>
-      <v-layout wrap>
-        <v-flex xs4 class="pa-2" data-aos="fade-right">
-          <v-responsive :aspect-ratio="1/1">
-            <img src="image/top1.jpg" class="image">
-          </v-responsive>
-        </v-flex>
-        <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
-          <v-responsive :aspect-ratio="1/1">
-            <img src="image/top2.jpg" class="image">
-          </v-responsive>
-        </v-flex>
-        <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
-          <v-responsive :aspect-ratio="1/1">
-            <img src="image/top3.jpg" class="image">
-          </v-responsive>
-        </v-flex>
-        <v-flex xs4 class="pa-2" data-aos="fade-right">
-          <v-responsive :aspect-ratio="1/1">
-            <img src="image/top1.jpg" class="image">
-          </v-responsive>
-        </v-flex>
-        <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="100">
-          <v-responsive :aspect-ratio="1/1">
-            <img src="image/top2.jpg" class="image">
-          </v-responsive>
-        </v-flex>
-        <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
-          <v-responsive :aspect-ratio="1/1">
-            <img src="image/top3.jpg" class="image">
-          </v-responsive>
-        </v-flex>
-
-
-      </v-layout>
-    </div>
+    </swiper> 
   </div>
    
 </template>
@@ -66,6 +27,17 @@ import "aos/dist/aos.css";
 
   export default {
     name: 'Home',
+    methods: {
+        MoveMain() {
+			this.$router.push("/")
+        },
+        MoveResume() {
+			this.$router.push("/resume")
+        },   
+	    MovePortpolio() {
+			this.$router.push("/portpolio")
+        }   
+    },
     data() {
       return {
         swiperOption:{
@@ -94,28 +66,25 @@ import "aos/dist/aos.css";
       background-size:cover;
       background-position: center center;
       .slog{
-        font-size:80px;
+        font-size:60px;
         font-weight:bold;
-        color: white;
+        color: rgb(69, 71, 79);
+        // display: flex;
+        // align-items: center;  
       }
-    }
+      .job{
+        font-size:20px;
+        font-weight:bold;
+        color: rgb(69, 71, 79);
+        text-align: center;
+      } 
+      // .btnl{
+      //   display: flex;
+      // }
+   .btn{
+    margin: 80px 20px 20px 30px;
+    text-align: center;
+   }
   }
-
-  .section{
-    width:1190px;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    .header{
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-    }
-    .image{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
+}
 </style>
